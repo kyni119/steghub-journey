@@ -1,0 +1,31 @@
+# Secrets and keys (CRITICAL)
+*.pem
+*.key
+*.pub
+*.crt
+*.pfx
+.env
+.env.*
+.aws/
+credentials
+kubeconfig
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+crash.log
+*.tfplan
+
+# Helm
+*.tgz
+
+# Editors
+.vscode/
+.idea/
+
+# Temporary files created by Word while a document is open
+~$*
