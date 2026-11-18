@@ -30,7 +30,11 @@ In *IAM* > *Users* > *Create user*: I named the user `kadio-admin`, chose *Attac
 
 I used it **temporarily**, because this is a personal learning account and I did not yet know which permissions each lesson needs. In a professional AWS environment, I would follow the **principle of least privilege**: give a user only the permissions required for the task. For this project, that means EC2 and its networking permissions (instances, key pairs, security groups) and read access to billing, nothing more.
 
-In practice, this IAM user is not used for the project: the work was done with my AWS Builder ID, and console access is not available for the IAM user in this account. Because it is not needed, I plan to replace `AdministratorAccess` with a narrower managed policy such as `AmazonEC2FullAccess`.
+In practice, this IAM user is not used for the project: the work was done with my AWS Builder ID, and console access is not available for the IAM user in this account. Because it is not needed, I replaced `AdministratorAccess` with a narrower managed policy, `AmazonEC2FullAccess`: it only covers EC2 (instances, key pairs, security groups), which is what this project uses.
+
+![IAM user with the AmazonEC2FullAccess policy only](images/iam-4-ec2-policy.png)
+
+`AmazonEC2FullAccess` is still broad inside EC2. A stricter version would be a custom policy that only allows the exact actions I use (launch, stop and terminate instances, edit my security group) on my own resources.
 
 ## Limits of my account (MFA)
 
