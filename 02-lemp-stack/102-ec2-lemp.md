@@ -34,7 +34,7 @@ ssh -i lamp-key.pem ubuntu@<public-ip-address>
 
 ![SSH connection to lemp-server](images/ec2-7-ssh.png)
 
-The server name in the prompt (`ip-172-31-33-79`) is different from the one of `lamp-server`: it is really the new machine.
+The server name in the prompt (`ip-xxx-xx-xx-xx` here, hidden) is different from the one of `lamp-server`: it is really the new machine.
 
 ## Things to remember
 

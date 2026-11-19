@@ -10,7 +10,7 @@
 
 ## Summary
 
-I built a LEMP stack on a second Ubuntu 24.04 EC2 instance: Nginx, MySQL, PHP-FPM, a `projectLEMP` server block, and a PHP page that reads a MySQL table.
+I built a LEMP stack on a second Ubuntu 24.04 EC2 instance: Nginx, MySQL, PHP-FPM, a `projectLEMP` server block, and a PHP page that reads a MySQL table. The page uses a read-only database user, and its credentials are kept outside the web root and out of GitHub.
 
 ## Notes
 
@@ -20,7 +20,7 @@ I built a LEMP stack on a second Ubuntu 24.04 EC2 instance: Nginx, MySQL, PHP-FP
 - Installing MySQL (lesson 104): [104-mysql.md](104-mysql.md)
 - Installing PHP-FPM (lesson 105): [105-php-fpm.md](105-php-fpm.md)
 - Nginx server block (lesson 106): [106-nginx-server-block.md](106-nginx-server-block.md)
-- Reading MySQL data with PHP (lesson 107): [107-php-mysql.md](107-php-mysql.md)
+- Reading MySQL data with PHP, with a read-only user and credentials outside the web root (lesson 107): [107-php-mysql.md](107-php-mysql.md)
 
 ## Errors and fixes
 
