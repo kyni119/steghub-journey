@@ -4,6 +4,10 @@ I'm **Kadio Kyni**. I'm currently following a **Cloud Engineering** training at 
 
 This repository collects my work, module by module: what I did, the errors I ran into and how I fixed them.
 
+## Quick reference
+
+- [Commands cheat sheet](commands-cheatsheet.md): the Linux, SSH, MySQL, Nginx, Node and curl commands I used, with a short explanation.
+
 ## Modules
 
 - [Web Stack Implementation (LAMP) in AWS](01-lamp-stack/README.md)

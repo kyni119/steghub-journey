@@ -29,3 +29,6 @@ crash.log
 
 # Temporary files created by Word while a document is open
 ~$*
+
+# Node.js
+node_modules/
